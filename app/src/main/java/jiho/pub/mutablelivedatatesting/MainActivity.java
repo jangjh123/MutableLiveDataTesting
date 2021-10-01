@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         // 콜백은 메소드. 리스너는 콜백 메소드를 가진 인터페이스. 즉,
         // public interface CallbackListener { = 리스너. 리스너는 콜백메소드의 결과를 핸들러로 전달하는 역할
-        //       public void onSetSomething(); = 콜백 메소드
+        //     public void onSetSomething(); = 콜백 메소드
 
         // 콜백이란? 피호출 메소드가 호출 메소드를 호출하는 것. 여기서는 m_data.observe (호출자) 에 new Observer<Pack> (피호출자) 이 인자.
         // m_data.observe 를 호출한 뒤, Observer<Pack> 에 구현된 이벤트 리스너가 이벤트를 받아들이고 observe 를 역으로 호출, observe 는 onChanged 를 implements 하여 호출.
